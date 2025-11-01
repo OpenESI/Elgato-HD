@@ -114,7 +114,7 @@ class gExtraInfo(Converter, object):
 				if (levelIndex is not -1):
 					expertString = (((expertString + " ") + "L:") + fileString[(levelIndex + 4)])
 		except:
-			print("Infobar")
+			print "Infobar"
 		return expertString
 
 	def isGParameter(self, boxId, caId):

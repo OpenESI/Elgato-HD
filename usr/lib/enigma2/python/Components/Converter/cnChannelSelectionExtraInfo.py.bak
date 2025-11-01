@@ -53,8 +53,8 @@ class cnChannelSelectionExtraInfo(Converter, object):
 	def getText(self):
 		service = self.source.service
 		print("Test source=")
-		print((self.source))
-		print(("Test service= %s" % (service)))
+		print(self.source)
+		print("Test service= %s" % (service))
 		if (service is None):
 			return ''
 		
@@ -270,7 +270,7 @@ class cnChannelSelectionExtraInfo(Converter, object):
 				except:
 					pass
 					
-				print((self.type))
+				print(self.type)
 				print(fq)
 				print(pol)
 				print(fec)
