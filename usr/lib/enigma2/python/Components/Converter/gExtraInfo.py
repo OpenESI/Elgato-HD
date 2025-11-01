@@ -397,10 +397,10 @@ class gExtraInfo(Converter, object):
         elif (self.type == self.TRANSPONDER):
             return self.getTransponderType(info)
         elif (self.type == self.SID):
-            sidValue = info.getInfo(iServiceInformation.sSID)
-             if not sidValue:
-                return ""
-            return "%0.4X" % int(sidValue)
+    sidValue = info.getInfo(iServiceInformation.sSID)
+    if not sidValue:
+        return ""
+    return "%0.4X" % int(sidValue)
 
         return ""
 
